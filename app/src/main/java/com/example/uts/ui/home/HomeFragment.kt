@@ -9,6 +9,7 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.uts.Fragment_bmi
 import com.example.uts.LoginActivity
+import com.example.uts.Profile
 import com.example.uts.R
 import com.example.uts.ui.dashboard.CalculatorFragmen
 import com.example.uts.ui.main.KonversiUangFragment
@@ -28,10 +29,19 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         auth = FirebaseAuth.getInstance()
 
+
+
+        val profileImageView: ImageView = view.findViewById(R.id.profile)
+
+        profileImageView.setOnClickListener {
+            val intent = Intent(activity, Profile::class.java)
+            startActivity(intent)
+        }
         val logoutImageView: ImageView = view.findViewById(R.id.logout)
 
         logoutImageView.setOnClickListener {
@@ -44,6 +54,8 @@ class HomeFragment : Fragment() {
             startActivity(intent)
             activity?.finish()
         }
+
+
 
         // Inisialisasi view, binding, dan lainnya
 

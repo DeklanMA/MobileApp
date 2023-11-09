@@ -10,29 +10,45 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
+
         tools:targetApi="34">
         <activity
-            android:name=".LoginRegister"
+            android:name=".edit_profile"
             android:theme="@style/NoActionBarTheme"
             android:exported="false" />
         <activity
-            android:name=".ForgotPassword"
+            android:name=".Profile"
             android:exported="false"
-            android:theme="@style/NoActionBarTheme" />
+            android:theme="@style/NoActionBarTheme"
+            android:label="@string/title_activity_profile"
+            />
+        <activity
+            android:name=".LoginRegister"
+            android:exported="false"
+            android:theme="@style/NoActionBarTheme"
+             />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/NoActionBarTheme"
+            android:exported="false"
+            />
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
+            android:theme="@style/NoActionBarTheme"
             android:label="Register"
-            android:theme="@style/NoActionBarTheme" />
+            />
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:label="Login"
-            android:theme="@style/NoActionBarTheme" />
+            android:theme="@style/NoActionBarTheme"
+             />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:theme="@style/NoActionBarTheme">
+            android:theme="@style/NoActionBarTheme"
+           >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,7 +59,8 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Uts" />
+            android:theme="@style/Theme.Uts"
+             />
     </application>
 
 </manifest>
