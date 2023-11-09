@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="12dp" /> <!-- Sesuaikan dengan radius yang diinginkan -->
+            <solid android:color="#FF9800" /> <!-- Warna latar belakang biru -->
+        </shape>
+    </item>
+    <item android:id="@android:id/content">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="12dp" /> <!-- Sesuaikan dengan radius yang diinginkan -->
+            <solid android:color="#FF9800" /> <!-- Warna latar belakang biru -->
+        </shape>
+    </item>
+</layer-list>

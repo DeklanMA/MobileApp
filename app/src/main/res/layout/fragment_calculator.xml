@@ -1,0 +1,159 @@
+<!-- fragment_calculator.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg"
+    android:layout_above="@+id/grid_layout"
+    >
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="353dp"
+        android:layout_height="273dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="end"
+        android:padding="8dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display"
+        tools:layout_editor_absoluteX="19dp">
+
+        <!-- Tombol untuk angka -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_1"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_2"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_3"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_4"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_5"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_6"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_7"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_8"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_9"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_0"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="0" />
+
+        <!-- Tombol operasi -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="+" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_subtract"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="-" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_multiply"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="x" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_divide"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="/" />
+
+        <!-- Tombol lainnya (misalnya, hasil dan hapus) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_equals"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="=" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_clear"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:text="C" />
+
+        <!-- Menetapkan kolom dan baris untuk tombol Clear -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_clear1"
+            android:background="@drawable/button"
+            android:layout_marginStart="2dp"
+            android:layout_width="0dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:text="C" />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/baseline_calculate_24"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/baseline_settings_system_daydream_24"
+        android:title="Suhu" />
+    <item
+        android:id="@+id/navigation_bmi"
+        android:icon="@drawable/baseline_graphic_eq_24"
+        android:title="bmi" />
+
+    <item
+        android:id="@+id/konversi_uang"
+        android:icon="@drawable/convert"
+        android:title="Konversi_Uang" />
+
+</menu>

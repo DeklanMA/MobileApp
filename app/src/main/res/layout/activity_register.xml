@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/bg"
+    >
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="512dp"
+        android:backgroundTint="#29B6F6"
+        android:elevation="4dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="134dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="134dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|top"
+        android:text="Register"
+        android:textAppearance="@style/welcome" />
+
+    <TextView
+        android:id="@+id/login_to_yo"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="57dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|top"
+        android:text="Create a new account"
+        android:textAppearance="@style/login_to_yo"
+        android:textColor="#C4C4C4" />
+
+    <TextView
+        android:id="@+id/email12"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="321dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|top"
+        android:text="email"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/kotak"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Email"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/password12"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="419dp"
+        android:gravity="center_horizontal|top"
+        android:text="password"
+        android:textColor="#FEFCFC"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/kotak"
+        android:drawableEnd="@drawable/cc"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins"
+
+        android:hint="password"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/group_99"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="570dp"
+        android:text="@string/register"
+        android:textAppearance="@style/don_t_have_" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "377609816248",
+    "project_id": "utslogin-d8964",
+    "storage_bucket": "utslogin-d8964.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377609816248:android:d77a2b227c24a71a05cc4d",
+        "android_client_info": {
+          "package_name": "com.example.uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvQFSx86gE4aaq7-PLdy5IlQxYVDHBQAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

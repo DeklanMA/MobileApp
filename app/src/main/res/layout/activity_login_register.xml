@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LoginRegister">
+
+    <TextView
+        android:id="@+id/login_to_yo"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|top"
+        android:text="Selamat Datang Di Kodeu Tech"
+        android:textAppearance="@style/login_to_yo"
+        android:textColor="#C4C4C4" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="402dp"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:width="300dp"
+     android:background="@drawable/bg_button"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="300dp"
+        android:background="@drawable/bg_button"
+        android:text="Register"
+        android:textColor="@color/white"
+
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
